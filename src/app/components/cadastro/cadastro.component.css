@@ -1,0 +1,19 @@
+.login-block{
+    width:90%;
+    padding : 50px 0;
+    }
+
+    .container{background:#D3D3D3; border-radius: 10px; width: 40%; height: 40%;}
+  .btn-login{background: #1ab1b1; color:#fff; font-weight:600;}
+  .bt1{background: #1fad3e; color:#fff; font-weight:600;}
+
+    img{
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+}
+body{
+    
+    background-color: cadetblue;
+}

@@ -1,0 +1,27 @@
+.btn{
+   color: #33adae;
+}
+.navbar{
+   background: #ffffff;
+}
+.a{
+    background: crimson;
+}
+.btn-login{background: #1ab1b1; color:#fff; font-weight:600;}
+img    {
+    border-radius: 50%;
+}
+.circle {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 42px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .circle img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }

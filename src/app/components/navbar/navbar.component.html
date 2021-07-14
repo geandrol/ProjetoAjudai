@@ -1,3 +1,26 @@
-<a routerLink='/home'>Home</a><br>
-<a routerLink='/cadastro'>Cadastre-se</a><br>
-<a routerLink='/login'>Entrar</a>
+<nav class="navbar navbar-expand-lg" >
+    <div class="container-fluid border-bottom">
+      <img src="https://i.ibb.co/60G6Px5/Novo-atalho-lnk-removebg-preview-1.png" class="img-fluid" style="max-width: 120px;" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">     
+        </ul>
+        <form class="d-flex" >
+          <input class="btn" class="form-control" type="search" placeholder="" aria-label="Search">
+          <button type="button" class="btn">Buscar</button>
+        </form>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <div class="circle">
+            <img src="https://i.ibb.co/d7tLbZ1/Whats-App-Image-2021-07-08-at-17-13-00.jpg">
+          </div>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link" class="btn btn-login float-right"  routerLink='/login' >Sair</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

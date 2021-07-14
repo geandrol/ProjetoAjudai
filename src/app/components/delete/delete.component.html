@@ -1,0 +1,36 @@
+<div class="conteiner">
+
+  <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+                         
+                  <div class="card-columns " id="cardcol">
+                    <div class="card m-2" id="cardf">
+                        <h2 class="text-center">Apagar postagem</h2>
+                  <div class="card m-2" id="cardff">
+                    <h4 class="card-title" class="btnt">Tema: {{postagem.tema.descricao}}</h4>
+                    <img  id="img1" class="img-fluid "  src="{{postagem.imagem}}" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="btnt card-title text-center" >{{postagem.titulo}}</h5>
+                     <div class="card-body">
+                      <p class="card-text">{{postagem.texto}}</p>
+                    </div>
+                    <h3 class="btnt text-center">Tem certeza que quer apagar?</h3>
+                     <div class="modal-footer d-flex justify-content-center">
+                         
+                      <button type="button" class="btn btn-login float-right" (click)="apagarPostagem()" >Sim</button>
+            <button type="button" class="bt2 btn btn-login float-right" routerLink='/home'>Voltar</button>
+                    </div>
+                    </div>
+                    
+                  </div>
+               </div>
+               
+              </div>
+              </div>
+        </div>
+        </div>
+   
+
+
+
+  

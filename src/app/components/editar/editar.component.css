@@ -1,0 +1,36 @@
+.btn-login{background: #b45021; color:#fff; font-weight:600;}
+.bt2{background: #1ab1b1; color:#fff; font-weight:600;}
+
+.card-columns{
+    width: 40%;
+}
+h2{
+    font-family: Georgia, serif;
+    color: #eff5f5;
+  }
+  .btnt{
+    font-family: Georgia, serif;
+    color: #33adae; 
+  }
+  #cardf{
+      background-color:#33adae ;
+  }
+
+  input{
+      width: 95%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  textarea{
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  select{
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }

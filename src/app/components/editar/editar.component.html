@@ -1,0 +1,39 @@
+<div class="conteiner m-5">
+
+    <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+   
+       <div class="card-columns " id="cardcol">
+        <div class="card m-2" id="cardf">
+        <h4 class="btnt text-center text-white" id="">Atualize sua postagem</h4>
+        <div class="card m-2" id="cardff">
+       <div class="row">
+      <label for="exampleInputEmail1"  class="btnt text-uppercase" >Area de Atuação</label>
+      <select  class="form-select" aria-label="Default select example" [(ngModel)]='idTema' (change)='findByIdTema'>
+        <option *ngFor='let item of listaTema' [value]="item.id">
+          {{item.descricao}}
+       </option>
+      </select>
+  
+      <label for="exampleInputEmail1"  class="btnt text-uppercase" >Url da imagem do seu Empreendimento
+        </label>
+      <input [(ngModel)]='postagem.imagem' type="text" class="form-control"  placeholder="" >
+      <label for="exampleInputEmail1"  class="btnt text-uppercase" >Titulo</label>
+      <input [(ngModel)]='postagem.titulo'  type="text" class="form-control"  placeholder="" >
+      <label for="exampleInputEmail1"  class="btnt text-uppercase" >Descreva seu negócio</label>
+      <textarea [(ngModel)]='postagem.texto' type="text" class="form-control"  placeholder=""></textarea>
+    </div>
+  
+    <div class="m-2">
+      <button type="button" class="bt2 btn btn-login float-right" (click)="atualizarPostagem()" >Atualizar</button>
+      <button type="button" class="bt1 btn btn-login float-left" routerLink='/home'>Cancelar</button>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+  

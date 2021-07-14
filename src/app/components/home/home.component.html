@@ -1,35 +1,126 @@
+<nav class="navbar navbar-expand-lg" >
+  <div class="container-fluid border-bottom">
+    <img src="https://i.ibb.co/60G6Px5/Novo-atalho-lnk-removebg-preview-1.png" class="img-fluid" style="max-width: 120px;" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">     
+      </ul>
+      <form class="d-flex" >
+        <input class="btn" class="form-control" type="search" placeholder="" aria-label="Search">
+        <button type="button" class="btn">Buscar</button>
+      </form>
+      <ul class="navbar-nav mb-2 mb-lg-0">
+      <li class="nav-item">
+        <div class="circle">
+          <img src="https://i.ibb.co/d7tLbZ1/Whats-App-Image-2021-07-08-at-17-13-00.jpg">
+        </div>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link" class="btn btn-login float-right"  routerLink='/login' >Sair</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<div class="">
-  <div class="row">
-    <div class="col-2">
+
+<div class="container-fluid">
+  <div class="row"  >
+    <div class="col-2 mt-3">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://i.imgur.com/VxnokNh.jpg" class="d-block w-100" alt="...">
+            <img src="https://i.ibb.co/MZ2HvGq/sfsd.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="https://i.imgur.com/VxnokNh.jpg" class="d-block w-100" alt="...">
+            <img src="https://i.ibb.co/fxGWJ6T/sdfsd.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="https://i.imgur.com/VxnokNh.jpg" class="d-block w-100" alt="...">
+            <img src="https://i.ibb.co/hBMM6kG/sd.jpg " class="d-block w-100" alt="...">
           </div>
         </div>
       </div>
     </div>
-    <div class="col-8">
-      Column
+    
+    <div class="col-8" >
+   
+      <h2 class="text-center">Publique seu negocio</h2>
+      <!-- Botão para acionar modal -->
+<div class="Botãomodal"><button class="btn btn-login float-right" (click)="open(mymodal)">Nova postagem</button></div>
+
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active text-white" id="nav-home-tab" data-toggle="tab" href="#todaspostagens" role="tab" aria-controls="nav-todaspostagens" aria-selected="true">Postagens</a>
+  </div>
+</nav>
+
+<div class="tab-content" id="nav-tabContent" >
+  <div class="tab-pane fade show active" id="nav-#todaspostagens" role="tabpanel" aria-labelledby="nav-#todaspostagens-tab">
+   
+    
+    <div class="card-columns " id="cardcol">
+    <div class="card m-5" id="cardf" *ngFor='let item of listaPostagem'>
+      <h4 class="card-title" class="btnt">Tema: {{item.tema.descricao}}</h4>
+      <img  id="img1" class="img-fluid "  src="{{item.imagem}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center" >{{item.titulo}}</h5>
+       <div class="card-body">
+        <p class="card-text">{{item.texto}}</p>
+      </div>
+       
+       <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="bt22 btn btn-login float-right" [routerLink]="['/editar',item.id]" >Editar</button>
+        <button type="button" class="bt2 btn btn-login float-right" [routerLink]="['/delete',item.id]">Deletar</button>
+      </div>
+      </div>
+      
     </div>
-    <div class="col-2">
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://i.imgur.com/VxnokNh.jpg" class="d-block w-100" alt="...">
+ </div>
+
+</div>
+</div>
+
+    </div>
+    <div class="col-2 mt-3">
+      <div class="card mb-3" style="max-width: 200px;">
+        <div class="row g-0">
+          <div class="col-3">
+            <img src="https://i.ibb.co/nB797Zt/Whats-App-Image-2021-06-16-at-15-51-08.jpg" class="img-fluid rounded-circle" alt="..." width="40px">
           </div>
-          <div class="carousel-item">
-            <img src="https://i.imgur.com/VxnokNh.jpg" class="d-block w-100" alt="...">
+          <div class="col-8 ms-2">
+              <p class="h5" class="card-title">Senei Sushi</p>        
           </div>
-          <div class="carousel-item">
-            <img src="https://i.imgur.com/VxnokNh.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 300px;">
+        <div class="row g-0">
+          <div class="col-3">
+            <img src="https://i.ibb.co/HT9znvz/prolave-lavanderia-delivery-1x1ee.jpg" class="img-fluid rounded-circle" alt="..."  width="40px">
+          </div>
+          <div class="col-8 ms-2">
+            <p class="h5" class="card-title">Padaria Central</p>        
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 300px;">
+        <div class="row g-0">
+          <div class="col-3">
+            <img src="https://i.ibb.co/PhvfqBL/i-Tunes-Artwork.jpg" class="img-fluid rounded-circle" alt="..." width="40px">
+          </div>
+          <div class="col-8 ms-2">
+            <p class="h5" class="card-title">Hortifruti Delevery</p>        
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 300px;">
+        <div class="row g-0 ">
+          <div class="col-3">
+            <img src="https://i.ibb.co/GpVD4HP/prolave-lavanderia-deliveryss.jpg" class="img-fluid rounded-circle" alt="..." width="40px">
+          </div>
+          <div class="col-8 ms-2">
+            <p class="h5" class="card-title">Delecatte's</p>        
           </div>
         </div>
       </div>
@@ -37,3 +128,39 @@
   </div>
 </div>
 
+  
+
+
+
+
+<!-- Modal -->
+<ng-template #mymodal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Poste seu negocio</h4>
+    
+  </div>
+  <div class="modal-body">
+    <label for="exampleInputEmail1"  class="text-uppercase" >Area de Atuação</label>
+    <select  class="form-select" aria-label="Default select example" [(ngModel)]='idTema' (change)='pegarValor()'>
+      <option *ngFor='let item of listaTema' [value]="item.id">
+        {{item.descricao}}
+     </option>
+    </select>
+
+    <label for="exampleInputEmail1"  class="text-uppercase" >Url da imagem do seu Empreendimento
+      </label>
+    <input [(ngModel)]='postagem.imagem' type="text" class="form-control"  placeholder="" >
+    <label for="exampleInputEmail1"  class="text-uppercase" >Titulo</label>
+    <input [(ngModel)]='postagem.titulo' type="text" class="form-control"  placeholder="" >
+    <label for="exampleInputEmail1"  class="text-uppercase" >Descreva seu negócio</label>
+    <textarea [(ngModel)]='postagem.texto' type="text" class="form-control"  placeholder=""></textarea>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-login float-right" (click)="cadastrarPostagem()"  (click)="modal.close('Save click') " >Publicar</button>
+    <button type="button" class="bt1 btn btn-login float-right" (click)="modal.dismiss('Cross click')">Cancelar</button>
+  </div>
+  
+</ng-template>
+
+<!-- Carde postagem -->
